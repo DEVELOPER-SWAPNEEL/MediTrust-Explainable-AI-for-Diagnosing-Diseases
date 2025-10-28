@@ -3,7 +3,7 @@
 # 🧬 MediTrust.AI: Explainable AI for Diagnosing Diseases from X-Rays  
 **Empowering Trust in AI-Driven Healthcare**  
 
-![Project Banner](assets/header.png)  
+![Project Banner](assets/banner.gif)  
 
 
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
@@ -64,11 +64,123 @@ Doctors hesitate to trust predictions without clear explanations.
 | **IDE** | PyCharm / VSCode |
 | **Documentation** | Markdown + GitHub Wiki |
 
+## 🧠 Workflow
+
+1. **Upload X-Ray image** via web interface.  
+2. **Preprocessing:** resizing, normalization, and enhancement.  
+3. **Prediction:** CNN or Vision Transformer (ViT) model detects the disease.  
+4. **Explainability:** Grad-CAM / LIME highlights key image areas influencing the decision.  
+5. **Visualization:** Result displayed with probability scores and explanation heatmaps.  
+
+*(💡 Hook: Add a GIF here showing model workflow animation)*  
+
 ---
 
+## 🧪 Dataset Details
+
+- **Dataset Used:** [Kaggle Chest X-Ray (Pneumonia)](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)  
+- **Classes:** Normal / Pneumonia / COVID-19 (merged or separate)  
+- **Dataset Size:** 5,863 images (train/test split 80/20)  
+- **Format:** `.jpeg` grayscale images (converted to RGB for CNN input)  
+
+---
+
+## 📈 Expected Model Performance
+
+| **Metric** | **Target Value** |
+|-------------|------------------|
+| Accuracy | ≥ 93% |
+| Precision | ≥ 90% |
+| Recall | ≥ 90% |
+| F1-Score | ≥ 0.91 |
+| Explainability Coverage | ≥ 95% interpretable cases |
+
+
+---
+
+## 🔍 Explainability Showcase
+
+| **Technique** | **Visualization Example** |
+|----------------|----------------------------|
+| **Grad-CAM** | *(Add Grad-CAM output image here)* |
+| **LIME** | *(Add LIME heatmap example here)* |
+| **SHAP** | *(Add SHAP summary plot here)* |
+
+---
+
+## 🧾 Installation & Usage
+# 1️⃣ Clone this repository
+git clone https://github.com/DEVELOPER-SWAPNEEL/MediTrust-Explainable-AI-for-Diagnosing-Diseases
+
+# 2️⃣ Navigate to project folder
+cd [MediTrust.AI](https://github.com/DEVELOPER-SWAPNEEL/MediTrust-Explainable-AI-for-Diagnosing-Diseases)
+
+# 3️⃣ Install dependencies
+pip install -r requirements.txt
+
+# 4️⃣ Run the web app
+streamlit run app/app.py
+🧩 Future Enhancements
+✅ Multi-disease detection (Pneumonia, Tuberculosis, Lung Cancer)
+🌐 Multi-language support for accessibility
+💬 Medical report generation using NLP
+☁️ Cloud-based deployment (Hugging Face / AWS EC2)
+🔐 HIPAA-compliant data privacy and security layer
+🧠 Research & Publication Scope
+Target journals & conferences:
+IEEE Transactions on Artificial Intelligence
+Elsevier AI in Healthcare
+Springer Nature – Explainable AI Track
+NeurIPS / ICML Workshops on Trustworthy AI
+🧰 Contributors
+Name	Role	Contribution
+Swapneel Purohit	Project Lead	Core Model Development & Deployment
+	Research	Explainability & Visualization
+  Data & Backend	Dataset Curation & Processing
+	UI/Frontend	Streamlit Dashboard Development
+❤️ Acknowledgements
+Special thanks to:
+Kaggle for the Chest X-Ray dataset
+TensorFlow & PyTorch communities
+Streamlit for rapid deployment tools
+OpenAI for concept inspiration and structuring
+📜 License
+This project is licensed under the MIT License — see the LICENSE file for details.
+<div align="center">
+🌟 “MediTrust.AI — Making AI Transparent, One X-Ray at a Time.” 🌟
+</div> ```
 ## 🧱 **Folder Structure**
 
 ```bash
+🧩 Future Enhancements
+✅ Multi-disease detection (Pneumonia, Tuberculosis, Lung Cancer)
+🌐 Multi-language support for accessibility
+💬 Medical report generation using NLP
+☁️ Cloud-based deployment (Hugging Face / AWS EC2)
+🔐 HIPAA-compliant data privacy and security layer
+🧠 Research & Publication Scope
+Target journals & conferences:
+IEEE Transactions on Artificial Intelligence
+Elsevier AI in Healthcare
+Springer Nature – Explainable AI Track
+NeurIPS / ICML Workshops on Trustworthy AI
+🧰 Contributors
+Name	Role	Contribution
+Swapneel Purohit	Project Lead	Core Model Development & Deployment
+	Research	Explainability & Visualization
+  Data & Backend	Dataset Curation & Processing
+	UI/Frontend	Streamlit Dashboard Development
+❤️ Acknowledgements
+Special thanks to:
+Kaggle for the Chest X-Ray dataset
+TensorFlow & PyTorch communities
+Streamlit for rapid deployment tools
+OpenAI for concept inspiration and structuring
+📜 License
+This project is licensed under the MIT License — see the LICENSE file for details.
+
+
+
 MediTrust.AI/
 │
 ├── assets/                     # All static visuals and logos
@@ -104,78 +216,6 @@ MediTrust.AI/
 ├── README.md
 ├── LICENSE
 └── .gitignore
-⚙️ How It Works
 
-(Hook: Add a system diagram GIF here — data input → model → explainability → visualization)
-🧠 Workflow
-Upload X-Ray image via web interface.
-Preprocessing (resizing, normalization).
-CNN or ViT model predicts the disease.
-Grad-CAM / LIME highlights key image areas influencing the decision.
-Result displayed with probability and explanation heatmap.
-🧪 Dataset Details
-Dataset Used: Kaggle Chest X-Ray (Pneumonia)
-Classes: Normal / Pneumonia / COVID-19 (merged or separate)
-Size: 5,863 images (train/test split 80/20)
-Format: .jpeg grayscale images (RGB conversion applied)
-📈 Expected Model Performance
-Metric	Target
-Accuracy	≥ 93%
-Precision	≥ 90%
-Recall	≥ 90%
-F1-Score	≥ 0.91
-Explainability Coverage	≥ 95% interpretable cases
-(Hook: Insert model training accuracy/loss GIF here)
-🔍 Explainability Showcase
-Technique	Visualization
-Grad-CAM	
-LIME	
-SHAP	
-(Hook: Add animated GIFs showing heatmaps appearing on X-rays)
-🖥️ Web App Demo
+```bash
 
-(Hook: Use GIF showing the complete web app usage flow)
-👉 Upload X-Ray → Click Predict → View Results + Heatmap
-Built with Streamlit, minimal UI for clinicians and students alike.
-
-🧾 Installation & Usage
-# 1️⃣ Clone this repository
-git clone https://github.com/<your_username>/MediTrust.AI.git
-
-# 2️⃣ Navigate to project folder
-cd MediTrust.AI
-
-# 3️⃣ Install dependencies
-pip install -r requirements.txt
-
-# 4️⃣ Run the web app
-streamlit run app/app.py
-🧩 Future Enhancements
-✅ Multi-disease detection (Pneumonia, Tuberculosis, Lung Cancer)
-🌐 Multi-language support for accessibility
-💬 Medical report generation with NLP
-☁️ Cloud-based deployment (Hugging Face / AWS EC2)
-🔐 HIPAA-compliant data privacy layer
-🧠 Research & Publication Scope
-Target journals & conferences:
-IEEE Transactions on Artificial Intelligence
-Elsevier AI in Healthcare
-Springer Nature – Explainable AI Track
-NeurIPS / ICML Workshops on Trustworthy AI
-🧰 Contributors
-Name	Role	Contribution
-Swapneel Purohit	Project Lead	Core Model Development & Deployment
-Team Member 2	Research	Explainability & Visualization
-Team Member 3	Data & Backend	Dataset Curation & Processing
-Team Member 4	UI/Frontend	Streamlit Dashboard Development
-❤️ Acknowledgements
-Special thanks to:
-Kaggle for the Chest X-Ray dataset
-TensorFlow & PyTorch communities
-Streamlit for rapid deployment
-OpenAI for inspiration & idea structuring
-📜 License
-This project is licensed under the MIT License — see the LICENSE file for details.
-<div align="center">
-🌟 “MediTrust.AI — Making AI Transparent, One X-Ray at a Time.” 🌟
-</div> ```
