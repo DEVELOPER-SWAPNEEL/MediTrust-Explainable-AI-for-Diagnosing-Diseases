@@ -1,0 +1,33 @@
+# Core Deep Learning Framework
+tensorflow==2.12.0
+keras==2.12.0
+
+# Data Science & ML Utilities
+numpy==1.23.5
+pandas==1.5.3
+scikit-learn==1.2.2
+matplotlib==3.7.1
+seaborn==0.12.2
+
+# Image Processing
+opencv-python==4.7.0.72
+Pillow==9.5.0
+
+# Explainable AI Libraries
+lime==0.2.0.1
+shap==0.41.0
+grad-cam==1.4.8
+
+# Web App Framework
+streamlit==1.25.0
+
+# Visualization & Plotting
+plotly==5.15.0
+
+# Miscellaneous Utilities
+tqdm==4.65.0
+joblib==1.2.0
+
+# For deployment & compatibility
+protobuf==3.20.3
+h5py==3.8.0
